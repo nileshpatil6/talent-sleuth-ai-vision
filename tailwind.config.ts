@@ -66,8 +66,8 @@ export default {
 				talent: {
 					orange: '#FF6B00',
 					gray: '#D1D5DB',
-					darkgray: '#1e1e1e',
-					lightgray: '#f0f0f0',
+					darkgray: '#333333',
+					lightgray: '#f9f9f9',
 				}
 			},
 			borderRadius: {
@@ -111,6 +111,10 @@ export default {
 				slideInRight: {
 					'0%': { transform: 'translateX(100%)', opacity: '0' },
 					'100%': { transform: 'translateX(0)', opacity: '1' },
+				},
+				rotate3d: {
+					'0%': { transform: 'rotate3d(0, 1, 0, 0deg)' },
+					'100%': { transform: 'rotate3d(0, 1, 0, 360deg)' },
 				}
 			},
 			animation: {
@@ -121,6 +125,7 @@ export default {
 				'fade-in': 'fadeIn 0.7s ease-in-out forwards',
 				'slide-up': 'slideUp 0.7s ease-in-out forwards',
 				'slide-in-right': 'slideInRight 0.7s ease-in-out forwards',
+				'rotate-3d': 'rotate3d 15s linear infinite',
 			}
 		}
 	},

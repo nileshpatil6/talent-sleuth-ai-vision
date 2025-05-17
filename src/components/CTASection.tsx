@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const CTASection = () => {
   return (
-    <section className="py-20 talent-gradient relative overflow-hidden">
+    <section className="py-20 bg-white relative overflow-hidden">
       <motion.div 
         className="absolute inset-0 hero-pattern opacity-20"
         animate={{ 
@@ -16,7 +16,7 @@ const CTASection = () => {
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <motion.div 
-          className="bg-white bg-opacity-90 backdrop-blur-md rounded-2xl p-8 md:p-12 lg:p-16 text-center shadow-2xl"
+          className="bg-white rounded-2xl p-8 md:p-12 lg:p-16 text-center shadow-lg border border-orange-100"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -51,7 +51,7 @@ const CTASection = () => {
             viewport={{ once: true }}
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button className="bg-talent-orange hover:bg-opacity-90 text-white border-none text-lg py-6 px-8 shadow-lg">
+              <Button className="bg-talent-orange hover:bg-opacity-90 text-white border-none text-lg py-6 px-8 shadow-md">
                 Start Free Trial
               </Button>
             </motion.div>
