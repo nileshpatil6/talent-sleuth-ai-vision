@@ -4,19 +4,10 @@ import { Button } from '@/components/ui/button';
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
-      <motion.div 
-        className="absolute inset-0 hero-pattern opacity-20"
-        animate={{ 
-          backgroundPositionX: ["0%", "100%"],
-          backgroundPositionY: ["0%", "100%"]
-        }}
-        transition={{ duration: 20, repeat: Infinity, repeatType: "reverse" }}
-      />
-      
+    <section className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <motion.div 
-          className="bg-white rounded-2xl p-8 md:p-12 lg:p-16 text-center shadow-lg border border-orange-100"
+          className="bg-white bg-opacity-90 backdrop-blur-md rounded-2xl p-8 md:p-12 lg:p-16 text-center shadow-lg border border-orange-100"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}

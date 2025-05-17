@@ -1,6 +1,7 @@
 
 import { useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Spline from '@splinetool/react-spline';
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
@@ -48,8 +49,13 @@ const Index = () => {
   
   return (
     <div className="min-h-screen bg-white overflow-hidden">
+      {/* Full-screen Spline container */}
+      <div className="fixed inset-0 w-full h-screen z-0">
+        <Spline scene="https://prod.spline.design/c4-YMv5CI7wrJSLc/scene.splinecode" />
+      </div>
+      
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <motion.div 
           className="fixed inset-0 hero-pattern opacity-10 z-0" 
           style={{ 
